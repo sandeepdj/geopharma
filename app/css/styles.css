@@ -1,0 +1,12 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.login-page {
+    padding-left: 0;
+    max-width: 360px;
+    margin: 5% auto;
+    overflow-x: hidden;
+}
