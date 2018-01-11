@@ -1,3 +1,66 @@
-<h1>I m Header</h1>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+                    </div>
+                    <ul class="nav navbar-nav top-nav">
+                        <li class="dash" ng-click="actme(nsale)" ng-class="{'active':dash}">
+                            <a ui-sref="app.Home">
+                                <span class="micon"><i class="fa fa-home" aria-hidden="true"></i>
+                                </span> <br>
+                                <span class="link-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nsale" ng-click="actme(nsale)">
+                            <a ui-sref="app.Walkin">
+                                <span class="micon"><i class="fa fa-home" aria-hidden="true"></i>
+                                    </span> <br>
+                                <span class="link-text"> New Sale </span>
+                            </a>
+                        </li>
+                        <li class="vsale" ng-click="actme(vsale)">
+                            <a href="">
+                                <span class="micon"><i class="fa fa-home" aria-hidden="true"></i>
+                                        </span><br>
+                                <span class="link-text">View Sales</span>
+                            </a>
+                        </li>
+                        <li class="tsale" ng-click="actme(tsale)">
+                            <a href="">
+                                <span class="micon"><i class="fa fa-home" aria-hidden="true"></i>
+                                            </span><br>
+                                <span class="link-text">Stock Transfer</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="micon"><i class="fa fa-home" aria-hidden="true"></i>
+                                    </span><br>
+                                <span class="link-text">Stock</span>
+                            </a>
+                        </li>
 
-<ui-view></ui-view>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href=""><img src="img/user.png"> Sandee Jadhav</a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-sign-out"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container-fluid">
+        <ui-view></ui-view>
+    </div>
+</section>

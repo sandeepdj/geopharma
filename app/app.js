@@ -1,6 +1,5 @@
 'use strict';
 var app = angular.module('geoPharma', ['ui.router', 'toaster']);
-
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
     function($stateProvider, $urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise("/");
@@ -22,6 +21,12 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
             url: '/Home',
             templateUrl: 'views/home/home.html',
             controller: 'authCtrl'
+        })
+
+        .state('app.Walkin', {
+            url: '/Walkin',
+            templateUrl: 'views/sale/walkin.html',
+            controller: 'saleCtrl'
         })
     }
 ]);

@@ -4,9 +4,48 @@ body {
     width: 100%;
 }
 
+body {
+    background-color: #EEEEEE !important;
+}
+
 .login-page {
     padding-left: 0;
     max-width: 360px;
     margin: 5% auto;
     overflow-x: hidden;
+}
+
+header {
+    background-color: #3ac9d6;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 6px solid #139ca9;
+}
+
+.top-nav li a {
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+.navbar-right img {
+    height: 40px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover,
+.top-nav li.active a {
+    background-color: #139ca9;
+    color: #fff;
+}
+
+.topbarSale {
+    background-color: #139ca9;
+}
+
+.contentblock {
+    background-color: #fff;
+    min-height: 300px;
 }

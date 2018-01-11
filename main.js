@@ -16,11 +16,12 @@ function createWindow() {
     mainWindow = new BrowserWindow({ width: 1000, height: 700 })
 
     // and load the index.html of the app.
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'app/index.html'),
-        protocol: 'file:',
-        slashes: true
-    }))
+    mainWindow.loadURL('http://106.51.56.235:8081/geopulse/geo/index.html')
+        // mainWindow.loadURL(url.format({
+        //     pathname: path.join(__dirname, 'app/index.html'),
+        //     protocol: 'file:',
+        //     slashes: true
+        // }))
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
